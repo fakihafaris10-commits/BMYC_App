@@ -1,0 +1,21 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace "com.example.bmyc_app"
+    compileSdkVersion flutter.compileSdkVersion
+    defaultConfig {
+        applicationId "com.example.bmyc_app"
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+}
+
+flutter {
+    source '../..'
+}
